@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tropa das Luu's - Pedidos</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🍔 Tropa das Luu's</h1>
+<p>Lanches feitos com carinho</p>
+</header>
+
+
+<main>
+
+<h2>Cardápio</h2>
+
+<div class="lanche" onclick="adicionarPedido('X-Burger',18)">
+🍔 X-Burger<br>
+R$ 18,00
+</div>
+
+<div class="lanche" onclick="adicionarPedido('X-Salada',22)">
+🥗 X-Salada<br>
+R$ 22,00
+</div>
+
+<div class="lanche" onclick="adicionarPedido('Batata Frita',10)">
+🍟 Batata Frita<br>
+R$ 10,00
+</div>
+
+
+<h2>Seu pedido</h2>
+
+<ul id="listaPedido"></ul>
+
+<h3 id="valorTotal">
+Total: R$ 0
+</h3>
+
+
+<button onclick="enviarWhatsapp()">
+Enviar pedido pelo WhatsApp
+</button>
+
+
+
+<hr>
+
+
+<h2>🔐 Área ADM</h2>
+
+<input id="usuario" placeholder="Usuário">
+
+<input id="senha" type="password" placeholder="Senha">
+
+<button onclick="entrarAdm()">
+Entrar
+</button>
+
+<p id="mensagemAdm"></p>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
